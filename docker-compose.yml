@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  app:
+    image: python:3.6-alpine
+    ports:
+      - 34567:34567
+    volumes:
+      - ./:/app
+    working_dir: /app
